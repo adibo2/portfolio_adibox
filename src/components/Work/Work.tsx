@@ -5,6 +5,9 @@ import { Circle } from "../Circle"
 import { motion } from 'framer-motion'
 import { cardContent } from "./Work.data"
 import { useState } from "react"
+import { FiGithub, FiExternalLink } from "react-icons/fi";
+
+import Link from "next/link"
 
 export function Work() {
     const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
@@ -20,7 +23,7 @@ export function Work() {
         },
         collapsed: {
             width: "200px",
-            opacity: 0.2
+            opacity: 0.5
         }
     }
 
@@ -61,18 +64,35 @@ export function Work() {
                                 }}
                             >
                                 <div className="flex flex-col justify-end h-full">
-                                    <div className="card-footer rounded-b-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center p-3">
+                                    <div className="card-footer rounded-b-[20px] bg-gray-800 bg-opacity-95 min-h-[100px] flex flex-col items-center justify-center p-3">
                                         <h2 className="text-xl font-semibold text-center text-white">{title}</h2>
                                         {id === expandedIndex && (
                                             <>
                                                 <p>{description}</p>
-                                                <div className="flex gap-5 mt-3">
+                                                <div className="flex gap-5 mt-2">
                                                     {skills.map((data, index) => (
                                                         <p key={index}>{data.icon}</p>
                                                     ))}
                                                 </div>
                                             </>
                                         )}
+                                        <ul className="flex items-center gap-4 mt-2">
+                                            <li className=" block  list-none">
+                                                <Link
+                                                    href="/"
+                                                    className=""
+                                                >
+                                                    <FiGithub className=" w-7 h-7 md:w-8 md:h-8"></FiGithub>
+                                                </Link>
+                                            </li>
+                                            <li className="project-info-links-item">
+                                                <Link
+                                                    href="/"
+                                                >
+                                                    <FiExternalLink className=" w-7 h-7 md:w-8 md:h-8" />
+                                                </Link>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </motion.div>
