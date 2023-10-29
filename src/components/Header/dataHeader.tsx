@@ -1,18 +1,16 @@
 import { RiInstagramLine, RiYoutubeLine, RiTiktokLine, RiPinterestLine, RiTwitterXFill, RiBehanceLine } from "react-icons/ri";
+import {AiFillLinkedin,AiFillGithub} from "react-icons/ai"
 
 export const socialNetworks = [
   {
-    logo: <RiInstagramLine size="40" />,
-    src: "https://instagram.com/tarredev",
+    logo: <AiFillLinkedin size="40" />,
+    src: "https://www.linkedin.com/in/adib-bensmina-0a4115227/",
   },
   {
-    logo: <RiYoutubeLine size="40" />,
-    src: "https://youtube.com/@tarredev",
+    logo: <AiFillGithub size="40" />,
+    src: "https://github.com/adibo2",
   },
-  {
-    logo: <RiTiktokLine size="40" />,
-    src: "https://tiktok.com/@tarredev",
-  },
+ 
   // {
   //   logo: <RiPinterestLine size="40" />,
   //   src: "https://pinterest.com/tarredev",

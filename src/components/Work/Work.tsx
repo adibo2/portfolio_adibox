@@ -48,9 +48,9 @@ export function Work() {
                         animate="show"
                         exit="hidden"
                     >
-                        {cardContent.map(({ id, title, imageUrl, description, skills }) => (
+                        {cardContent.map(({ id, title, imageUrl,href,github, description, skills }) => (
                             <motion.div key={id}
-                                className={`card cursor-pointer h-[400px] bg-auto bg-no-repeat bg-center rounded-[20px] ${id === expandedIndex && 'expanded'}`}
+                                className={`card cursor-pointer h-[400px]  bg-no-repeat bg-cover bg-center rounded-[20px] ${id === expandedIndex && 'expanded'}`}
                                 initial={{ opacity: 1 }}
                                 variants={cardVariants}
                                 animate={id === expandedIndex ? 'expanded' : 'collapsed'}
@@ -79,19 +79,25 @@ export function Work() {
                                         <ul className="flex items-center gap-4 mt-2">
                                             <li className=" block  list-none">
                                                 <Link
-                                                    href="/"
+                                                target="_blank"
+                                                    href={href}
                                                     className=""
                                                 >
-                                                    <FiGithub className=" w-7 h-7 md:w-8 md:h-8"></FiGithub>
+                                                    <FiExternalLink className=" w-7 h-7 md:w-8 md:h-8"></FiExternalLink>
                                                 </Link>
                                             </li>
+                                            {github && 
                                             <li className="project-info-links-item">
-                                                <Link
-                                                    href="/"
-                                                >
-                                                    <FiExternalLink className=" w-7 h-7 md:w-8 md:h-8" />
-                                                </Link>
-                                            </li>
+                                            <Link
+                                            target="_blank"
+                                                href={github}
+                                            >
+                                                <FiGithub className=" w-7 h-7 md:w-8 md:h-8" />
+                                            </Link>
+                                        </li>
+                                            
+                                            }
+                                            
                                         </ul>
                                     </div>
                                 </div>

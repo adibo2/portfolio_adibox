@@ -10,13 +10,13 @@ export function Header() {
             <motion.div variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit="hidden">
                 <div className="container justify-between mx-auto md:flex">
                     <Link href="/">
-                        <h1 className="my-3 text-4xl text-center text-white md:text-lef">nightJoe
-                            <span className="text-secondary">Dev</span>
+                        <h1 className="my-3 text-4xl text-center text-white md:text-lef">Adib
+                            <span className="text-secondary">Bensmina</span>
                         </h1>
                     </Link>
                     <div className="flex items-center justify-center gap-7 cursor-pointer z-[9999999]">
                         {socialNetworks.map(({ logo, src }) => (
-                            <Link key={src} href={src} target="_blank" className="transition-all z-[9999999] duration-300 hover:text-secondary">
+                            <Link target="_blank" key={src} href={src}  className="transition-all z-[9999999] duration-300 hover:text-secondary">
                                 {logo}
                             </Link>
                         ))}
