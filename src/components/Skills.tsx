@@ -14,7 +14,7 @@ import { Avatar } from "./Avatar";
     return (
       <section
         id="skills"
-        className="flex h-full    flex-col  items-center justify-center gap-3 relative overflow-hidden  "
+        className="flex h-full    flex-col  items-center justify-center md:gap-3 relative overflow-hidden  "
         // style={{ transform: "scale(0.9)" }}
       >
           <Avatar />
