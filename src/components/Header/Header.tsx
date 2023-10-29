@@ -6,7 +6,7 @@ import { socialNetworks } from './dataHeader'
 
 export function Header() {
     return (
-        <div className='absolute z-20 inline-block w-full  top-5 md:top-10'>
+        <div className='absolute z-[9999999] inline-block w-full  top-5 md:top-10'>
             <motion.div variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit="hidden">
                 <div className="container justify-between mx-auto md:flex">
                     <Link href="/">
@@ -14,9 +14,9 @@ export function Header() {
                             <span className="text-secondary">Dev</span>
                         </h1>
                     </Link>
-                    <div className="flex items-center justify-center gap-7">
+                    <div className="flex items-center justify-center gap-7 cursor-pointer z-[9999999]">
                         {socialNetworks.map(({ logo, src }) => (
-                            <Link key={src} href={src} target="_blank" className="transition-all duration-300 hover:text-secondary">
+                            <Link key={src} href={src} target="_blank" className="transition-all z-[9999999] duration-300 hover:text-secondary">
                                 {logo}
                             </Link>
                         ))}

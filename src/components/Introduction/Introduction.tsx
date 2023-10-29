@@ -23,7 +23,7 @@ export function Introduction() {
                     >
                         <h1 className="mb-5 text-center sm:text-start text-4xl leading-tight md:mb-10">Hi 👋🏼.My name is,  <br />
                             <span className="text-secondary">ADIB BENSMINA</span></h1>
-                        <p className="max-w-xl  text-center sm:text-start  mb-10 text-xl md:max-w-2xl md:mx-0 md:mb-16 md:text-[20px] md:leading-10 ">
+                        <p className="max-w-xl  text-center sm:text-start  mb-10 text-xl md:max-w-[37rem] md:mx-0 md:mb-16 md:text-[20px] md:leading-10 ">
                         I'm an aspiring software engineer equipped with skills in Java, JavaScript, React, Next.js, Docker and AWS cloud. As a recent graduate, I'm passionate about crafting digital products that put user needs first. My focus is on utilizing my expertise to collaborate with cross-functional teams, implement accessible and inclusive design, and rapidly build applications that provide seamless experiences across platforms. 
                         </p>
 
