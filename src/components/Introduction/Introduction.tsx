@@ -27,7 +27,7 @@ export function Introduction() {
                         I'm an aspiring software engineer equipped with skills in Java, JavaScript, React, Next.js, Docker and AWS cloud. As a recent graduate, I'm passionate about crafting digital products that put user needs first. My focus is on utilizing my expertise to collaborate with cross-functional teams, implement accessible and inclusive design, and rapidly build applications that provide seamless experiences across platforms. 
                         </p>
 
-                        <div className="flex  items-center gap-3 md:gap-10 md:flex-row">
+                        <div className="flex  items-center justify-between md:justify-normal gap-3 md:gap-10 md:flex-row">
                             <a href="/projects" className="px-6 py-3 my-2 transition-all border-2 cursor-pointer w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                                 Resume
                             </a>
