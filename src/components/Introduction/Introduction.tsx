@@ -28,7 +28,7 @@ export function Introduction() {
                         </p>
 
                         <div className="flex  items-center justify-between md:justify-normal gap-3 md:gap-10 md:flex-row">
-                            <Link target='_blank' download="CV__Adib_Bensmina-en.pdf" href="http://localhost:3000/CV__Adib_Bensmina-en.pdf"   className="px-6 py-3 my-2 transition-all border-2 cursor-pointer w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
+                            <Link target='_blank' download="CV__Adib_Bensmina-en.pdf" href="https://portfolio-adibbensmina.vercel.app/CV__Adib_Bensmina-en.pdf"   className="px-6 py-3 my-2 transition-all border-2 cursor-pointer w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                                 Resume
                             </Link>
                             <Link href="mailto:adib.bensminaa@gmail.com" className="px-6 py-3 my-2 transition-all border-2 cursor-pointer text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
