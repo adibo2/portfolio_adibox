@@ -55,7 +55,7 @@ import { Avatar } from "./Avatar";
             />
           ))}
         </div>
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <div className="flex flex-row mb-24 md:mb-0 justify-around flex-wrap mt-4 gap-5 items-center">
           {Full_stack.map((image, index) => (
             <SkillDataProvider
               key={index}
