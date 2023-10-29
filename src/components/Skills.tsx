@@ -14,14 +14,14 @@ import { Avatar } from "./Avatar";
     return (
       <section
         id="skills"
-        className="flex h-screen w-screen flex-col  items-center justify-center gap-3 relative overflow-hidden  "
+        className="flex h-full    flex-col  items-center justify-center gap-3 relative overflow-hidden  "
         // style={{ transform: "scale(0.9)" }}
       >
           <Avatar />
 
         <SkillText />
   
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <div className="flex  flex-row justify-around flex-wrap mt-4 gap-5 items-center">
           {Skill_data.map((image, index) => (
             <SkillDataProvider
               key={index}

@@ -35,7 +35,7 @@ export function Work() {
                         initial="hidden"
                         animate="show"
                         exit="hidden"
-                        className="my-5 text-4xl text-center md:text-4-xl"
+                        className="my-5 mt-5 text-4xl text-center md:text-4-xl"
                     >MY   <span className="text-secondary">Project.</span>
                     </motion.h1>
                     <motion.div
