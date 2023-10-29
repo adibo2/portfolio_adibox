@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className= ' mt-10 h-[100vh]'>
+    <main className= ' mt-36 md:mt-10 h-[100vh]'>
       <Transition />
       <Cover />
     </main>
