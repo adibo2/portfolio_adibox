@@ -9,7 +9,7 @@ export const cardContent = [
     description:
       "web application that combines e-commerce, Youtube, and social networking. ",
     imageUrl: "/1.png",
-    href:"https://gamers-gaming.vercel.app",
+    href:"https://www.gamers-gaming.com",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
